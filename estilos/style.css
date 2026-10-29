@@ -7,3 +7,42 @@
   --destaque-inverso
   --fundo-card
 */
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --fundo-principal:#B3C5C9;
+  --fundo-card: #88A0A8;
+  --texto: #688D96;
+  --texto-inverso: #FFFFFF;
+  --destaque: #315963;
+  --destaque-inverso: #0F2C33;
+}
+
+body{
+  background-color: var(--fundo-principal);
+}
+
+header{
+  background-color: var(--destaque);
+  padding: 2rem;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header ul li a{
+  color: var(--texto-inverso);
+  font-size: 2rem;
+  text-decoration: none;
+}
