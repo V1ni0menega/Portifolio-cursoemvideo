@@ -1,16 +1,3 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
-
-
-
-
 *{
   padding: 0;
   margin: 0;
@@ -22,27 +9,91 @@
   --texto: #688D96;
   --texto-inverso: #FFFFFF;
   --destaque: #315963;
-  --destaque-inverso: #0F2C33;
+  --destaque-inverso: #091617;
 }
 
 body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
   background-color: var(--fundo-principal);
+  line-height: 1.5em;
+  color: var(--destaque-inverso);
 }
 
 header{
   background-color: var(--destaque);
-  padding: 2rem;
+  color: var(--texto);
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
 }
-
-header ul{
+nav#menu ul{
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 10px;   
 }
 
-header ul li a{
-  color: var(--texto-inverso);
-  font-size: 2rem;
+nav#menu a{
   text-decoration: none;
+  color: var(--texto-inverso);
+  padding: 12px;
+  border-radius: 5px;
+  transition:background-color 1s  var(--texto);
 }
+nav#menu a:hover{
+  background-color: var(--texto);
+  color: var(--destaque-inverso);
+}
+
+.foto{
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  border:5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque-inverso);
+  margin-top: 10px;
+}
+#redes-sociais{
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+section#ficha h1{
+  color: var(--destaque-inverso);
+  margin: 15px 12px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+main{
+  display:grid;
+  grid-template-columns: auto 20vw 1fr auto;
+  background-color: var();
+  gap: 10px;
+  margin-top: 20px;
+}
+section#ficha{
+  grid-column:2/3 ;
+  height: fit-content;
+  background-color: var(--fundo-card);
+  border-radius: 10px;
+}
+section#detalhes{
+  grid-column: 3;
+  height: fit-content;
+  background-color: var(--fundo-card);
+  padding: 10px;
+}
+article#skills ul{
+  list-style: none;
+}
+article#projetos ul{
+  list-style: none;
+  
+}
+
+
