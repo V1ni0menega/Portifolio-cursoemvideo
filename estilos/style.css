@@ -8,7 +8,7 @@
   --fundo-card: #88A0A8;
   --texto: #688D96;
   --texto-inverso: #FFFFFF;
-  --destaque: #315963;
+  --destaque: #3d6d79;
   --destaque-inverso: #091617;
 }
 
@@ -84,9 +84,10 @@ section#ficha{
 }
 section#detalhes{
   grid-column: 3;
-  height: fit-content;
+  height: 95%;
   background-color: var(--fundo-card);
   padding: 10px;
+  border-radius: 10px;
 }
 article#skills ul{
   list-style: none;
@@ -94,6 +95,11 @@ article#skills ul{
 article#projetos ul{
   list-style: none;
   
+}
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
 }
 
 
